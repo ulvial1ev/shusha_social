@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivtopiclogo"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@+id/tvtopic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toEndOf="@+id/tvtopic"
+        app:layout_constraintTop_toTopOf="@+id/tvtopic"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tvtopic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        android:textColor="@color/grey"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/ivtopiclogo"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:drawableEnd="@drawable/ic_book"
+        android:drawablePadding="3dp"
+        android:text="Dərslik"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/rectopic"
+        app:layout_constraintEnd_toStartOf="@+id/guideline24"
+        app:layout_constraintHeight_percent="0.03"
+        app:layout_constraintStart_toStartOf="@+id/tvtopic"
+        app:layout_constraintTop_toBottomOf="@+id/tvtopic" />
+
+    <TextView
+        android:id="@+id/tvtests"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:drawableEnd="@drawable/ic_cedvel"
+        android:drawablePadding="3dp"
+        android:text="Testlər"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/rectest"
+        app:layout_constraintEnd_toStartOf="@+id/guideline24"
+        app:layout_constraintHeight_percent="0.03"
+        app:layout_constraintStart_toStartOf="@+id/rectopic"
+        app:layout_constraintTop_toBottomOf="@+id/rectopic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rectopic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvtests"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rectest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@+id/tvtests"
+        app:layout_constraintTop_toBottomOf="@+id/tvtests" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Müzakirə"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/listviewmuz"
+        app:layout_constraintEnd_toStartOf="@+id/guideline24"
+        app:layout_constraintStart_toStartOf="@+id/rectest"
+        app:layout_constraintTop_toBottomOf="@+id/rectest" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="19dp" />
+
+    <ListView
+        android:id="@+id/listviewmuz"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/listviewmuz"
+        app:layout_constraintTop_toBottomOf="@+id/listviewmuz">
+
+        <EditText
+            android:id="@+id/edmuz"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edittextstyle"
+            android:ems="10"
+            android:hint="Şərh"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnaoiwd"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <ImageView
+            android:id="@+id/btnaoiwd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edittextstyle"
+            android:src="@drawable/ic_send"
+            android:onClick="Onclicksendcomm"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edmuz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edmuz"
+            app:layout_constraintTop_toTopOf="@+id/edmuz" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="117dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

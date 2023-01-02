@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="topic_name">
+        <item>Riyaziyyat</item>
+        <item>Azərbaycan dili</item>
+        <item>Ədəbiyyat</item>
+        <item>Fizika</item>
+        <item>Kimya</item>
+        <item>Xarici dil</item>
+        <item>Сoğrafiya</item>
+        <item>Biologiya</item>
+    </string-array>
+
+
+
+    <string-array name="usage">
+        <item>Test, Dərslik PDF</item>
+        <item>Test, Dərslik PDF</item>
+        <item>Test, Dərslik PDF</item>
+        <item>Test, Dərslik PDF</item>
+        <item>Test, Dərslik PDF</item>
+        <item>Test, Dərslik PDF</item>
+        <item>Dərslik PDF</item>
+        <item>Test, Dərslik PDF</item>
+
+    </string-array>
+</resources>

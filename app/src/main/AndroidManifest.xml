@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.byulvi.shushasocial" >
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <supports-screens android:smallScreens="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true"></supports-screens>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_licon"
+        android:roundIcon="@mipmap/ic_licon_round"
+        android:label="Shusha Social"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value= "ca-app-pub-2304984891162285~7776458568"/>
+
+        <activity android:name="com.byulvi.shushasocial.Loginactivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.byulvi.shushasocial.MainActivity"  android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.byulvi.shushasocial.addpostactivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.byulvi.shushasocial.profile_settings_activity" android:screenOrientation="portrait" />
+        <activity android:name="com.byulvi.shushasocial.readeractivity"   android:windowSoftInputMode="adjustPan|stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name="com.byulvi.shushasocial.readeractivitywpost" android:windowSoftInputMode="adjustPan|stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name="com.byulvi.shushasocial.searchactivity" android:noHistory="true" android:windowSoftInputMode="adjustPan|stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name="com.byulvi.shushasocial.Regactivity"  android:screenOrientation="portrait"/>
+        <activity android:name="com.byulvi.shushasocial.showuserlayout" android:screenOrientation="portrait"/>
+        <activity android:name="com.byulvi.shushasocial.credits" android:screenOrientation="portrait"/>
+        <activity android:name="com.byulvi.shushasocial.studyactivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.byulvi.shushasocial.readtopicactivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"  />
+        <activity android:name="com.byulvi.shushasocial.webview" android:screenOrientation="portrait" />
+        <activity android:name="com.byulvi.shushasocial.groupregactivity" android:noHistory="true" />
+        <activity android:name="com.byulvi.shushasocial.contentgroupactivity" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name="com.byulvi.shushasocial.gpimageactivity" />
+        <activity android:name="com.byulvi.shushasocial.ad" />
+    </application>
+
+</manifest>

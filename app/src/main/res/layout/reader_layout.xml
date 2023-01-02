@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/listadapter"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitlereader"
+            android:layout_width="307dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:autoSizeTextType="uniform"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvTextreader"
+            app:layout_constraintEnd_toEndOf="@+id/tvUsernamereader"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvUsernamereader"
+            app:layout_constraintTop_toBottomOf="@+id/tvUsernamereader"
+            app:layout_constraintVertical_bias="0.857" />
+
+        <TextView
+            android:id="@+id/tvUsernamereader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onclickopen1"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#90e0ef"
+            app:layout_constraintBottom_toTopOf="@+id/tvTitlereader"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintStart_toEndOf="@+id/ivppreader"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivppreader"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onclickopen"
+            android:src="#2f3e46"
+            app:civ_border_color="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/online"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/online"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivppreader"
+            app:layout_constraintEnd_toEndOf="@+id/ivppreader"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivppreader"
+            app:layout_constraintTop_toTopOf="@+id/ivppreader"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tvTextreader"
+            android:layout_width="294dp"
+            android:layout_height="91dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserratregular"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvTitlereader"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvTitlereader"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitlereader"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="4sp"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeStepGranularity="2sp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="26dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:onClick="onclickdelete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_delete" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeTextType="uniform"
+        android:paddingStart="20dp"
+        android:text="Şərhlər :"
+        android:textColor="@color/grey"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/listviewcomment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <ListView
+        android:id="@+id/listviewcomment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintHeight_percent="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+    </ListView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listviewcomment">
+
+        <EditText
+            android:id="@+id/edmuz"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edittextstyle"
+            android:ems="10"
+            android:hint="Şərh"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnaoiwd"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <ImageView
+            android:id="@+id/btnaoiwd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edittextstyle"
+            android:onClick="Onclicksendcomm"
+            android:padding="5dp"
+            android:src="@drawable/ic_send"
+            app:layout_constraintBottom_toBottomOf="@+id/edmuz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edmuz"
+            app:layout_constraintTop_toTopOf="@+id/edmuz" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

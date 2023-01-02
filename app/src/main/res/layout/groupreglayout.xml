@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:drawableTop="@drawable/ic_people_big"
+        android:text="Qruplar"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvlog"
+        app:layout_constraintEnd_toStartOf="@+id/guideline21"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline22"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"/>
+
+    <TextView
+        android:id="@+id/tvlog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Qrupa daxil olun."
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/edgpname"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="54dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="63dp" />
+
+    <EditText
+        android:id="@+id/edgpname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/edittextstyle"
+        android:drawableStart="@drawable/ic_school"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Qrupun adı"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/edgppwd"
+        app:layout_constraintEnd_toEndOf="@+id/tvlog"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvlog"
+        app:layout_constraintTop_toBottomOf="@+id/tvlog" />
+
+    <EditText
+        android:id="@+id/edgppwd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/edittextstyle"
+        android:drawableStart="@drawable/ic_pwd"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Şifrə"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/gpregbtn"
+        app:layout_constraintEnd_toEndOf="@+id/edgpname"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/edgpname"
+        app:layout_constraintTop_toBottomOf="@+id/edgpname" />
+
+    <Button
+        android:id="@+id/gpregbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/loginbtnstyle"
+        android:onClick="onclickloggroup"
+        android:text="Daxil ol"
+        app:layout_constraintBottom_toTopOf="@+id/tvchange"
+        app:layout_constraintEnd_toEndOf="@+id/edgppwd"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="@+id/edgppwd"
+        app:layout_constraintTop_toBottomOf="@+id/edgppwd" />
+
+    <TextView
+        android:id="@+id/tvchange"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="120dp"
+        android:onClick="onclickreggp"
+        android:text="Qrupunuz yoxdur? Yeni qrup yaradın."
+        android:textAlignment="center"
+        android:textColor="#48cae4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gpregbtn"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gpregbtn"
+        app:layout_constraintTop_toBottomOf="@+id/gpregbtn"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

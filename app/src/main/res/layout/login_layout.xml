@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Daxil olun."
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/edlogin"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/logo1" />
+
+    <EditText
+        android:id="@+id/edlogin"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittextstyle"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/edpwd"
+        app:layout_constraintEnd_toEndOf="@+id/t1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+    <EditText
+        android:id="@+id/edpwd"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/edittextstyle"
+        android:drawableStart="@drawable/ic_pwd"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Şifrə"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/b1"
+        app:layout_constraintEnd_toEndOf="@+id/edlogin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/edlogin"
+        app:layout_constraintTop_toBottomOf="@+id/edlogin" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/loginbtnstyle"
+        android:backgroundTint="@color/transparent"
+        android:fontFamily="@font/montserratbold"
+        android:foregroundTint="@color/transparent"
+        android:onClick="OnClickLogin"
+        android:padding="15dp"
+        android:text="Daxil ol"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/t2"
+        app:layout_constraintEnd_toEndOf="@+id/edpwd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/edpwd"
+        app:layout_constraintTop_toBottomOf="@+id/edpwd" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="onClickregtext"
+        android:text="Hesabınız yoxdur? Yeni hesab açın"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/b1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onclickreg"
+        app:layout_constraintBottom_toTopOf="@+id/t1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Xoş gəlmişsiniz"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvwelcomeuname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvwelcomeuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="384dp"
+        android:text="TextView"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvwelcome"
+        app:layout_constraintStart_toStartOf="@+id/tvwelcome" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

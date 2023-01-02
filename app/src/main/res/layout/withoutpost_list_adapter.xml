@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/listadapter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivtopiclogo"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            android:src="#2f3e46"
+            app:civ_border_color="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/onlineadp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/online"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivtopiclogo"
+            app:layout_constraintEnd_toEndOf="@+id/ivtopiclogo"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivtopiclogo"
+            app:layout_constraintTop_toTopOf="@+id/ivtopiclogo"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittextstyle"
+            android:padding="8dp"
+            android:paddingTop="5dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#90e0ef"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivcommclick"
+            app:layout_constraintHorizontal_bias="0.013"
+            app:layout_constraintStart_toEndOf="@+id/ivtopiclogo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
+
+        <ImageView
+            android:id="@+id/ivlike"
+            android:layout_width="53dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/like" />
+
+        <TextView
+            android:id="@+id/tvcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/grey"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvcommcount"
+            app:layout_constraintEnd_toEndOf="@+id/ivlike"
+            app:layout_constraintStart_toStartOf="@+id/ivlike"
+            app:layout_constraintTop_toTopOf="@+id/tvcommcount" />
+
+        <ImageView
+            android:id="@+id/ivcommclick"
+            android:layout_width="53dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivlike"
+            app:layout_constraintEnd_toStartOf="@+id/ivlike"
+            app:layout_constraintTop_toTopOf="@+id/ivlike"
+            app:srcCompat="@drawable/commicon" />
+
+        <TextView
+            android:id="@+id/tvcommcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="1"
+            android:textColor="@color/grey"
+            android:textSize="9sp"
+            app:layout_constraintEnd_toEndOf="@+id/ivcommclick"
+            app:layout_constraintStart_toStartOf="@+id/ivcommclick"
+            app:layout_constraintTop_toBottomOf="@+id/ivcommclick" />
+
+        <TextView
+            android:id="@+id/tvts"
+            android:layout_width="136dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textColor="#e5e5e5"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvUsername"
+            app:layout_constraintStart_toEndOf="@+id/tvUsername"
+            app:layout_constraintTop_toTopOf="@+id/tvUsername" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

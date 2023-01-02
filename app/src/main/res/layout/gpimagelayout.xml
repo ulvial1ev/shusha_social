@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <ListView
+        android:id="@+id/listviewgpphoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="411dp"
+        android:layout_height="81dp"
+        android:drawableTop="@drawable/ic_photos"
+        android:drawablePadding="6dp"
+        android:paddingTop="7dp"
+        android:text="Qrupda paylaşılmış şəkillər"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/listviewgpphoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listviewgpphoto">
+
+        <ImageView
+            android:id="@+id/ivimage"
+            android:layout_width="110dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/pp"
+            android:onClick="onclickselect"
+            android:padding="5dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="128dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/edittextcomment"
+            android:onClick="onclicksend"
+            android:text="Göndər"
+            app:layout_constraintBottom_toBottomOf="@+id/ivimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivimage"
+            app:layout_constraintTop_toTopOf="@+id/ivimage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

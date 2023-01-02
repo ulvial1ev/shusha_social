@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="Post"/>
+    <item
+        android:id="@+id/menu_cedvel"
+        android:icon="@drawable/ic_cedvel"
+        android:title="Müzakirə"/>
+
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@drawable/ic_add"
+        android:title="Post yarat"/>
+
+    <item
+        android:id="@+id/menu_study"
+        android:icon="@drawable/ic_school"
+        android:title="ShushaStudy"/>
+    <item
+        android:id="@+id/menu_groups"
+        android:icon="@drawable/ic_people"
+        android:title="Qruplar"/>
+
+</menu>

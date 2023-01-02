@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "805521951202",
+    "project_id": "shusha-social",
+    "storage_bucket": "shusha-social.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805521951202:android:2f8761c2ee08704c3f51bb",
+        "android_client_info": {
+          "package_name": "com.byulvi.shushasocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805521951202-o5e53976lub9n3c75v38olabj796felb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr-DcWzM1vC32paGqZH4xEMfO7o6U75PU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805521951202-o5e53976lub9n3c75v38olabj796felb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

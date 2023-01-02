@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/listadapter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivppadapterwpost"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="15dp"
+            android:src="#2f3e46"
+            app:civ_border_color="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/onlineadppost"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/online"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivppadapterwpost"
+            app:layout_constraintEnd_toEndOf="@+id/ivppadapterwpost"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivppadapterwpost"
+            app:layout_constraintTop_toTopOf="@+id/ivppadapterwpost"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tvusernamewpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/edittextstyle"
+            android:padding="9dp"
+            android:text="TextView"
+            android:textColor="#90e0ef"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivppadapterwpost"
+            app:layout_constraintStart_toEndOf="@+id/ivppadapterwpost"
+            app:layout_constraintTop_toTopOf="@+id/ivppadapterwpost" />
+
+        <ImageView
+            android:id="@+id/displayinpostimage"
+            android:layout_width="395dp"
+            android:layout_height="262dp"
+            android:layout_marginTop="16dp"
+            android:src="#2f3e46"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvtitlewithpost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="15dp"
+            android:text="text"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvcommcountpost"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivlikepost"
+            android:layout_width="44dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/displayinpostimage"
+            app:srcCompat="@drawable/like" />
+
+        <TextView
+            android:id="@+id/ivcountpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="11dp"
+            android:text="1"
+            android:textColor="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivlikepost" />
+
+        <ImageView
+            android:id="@+id/ivcommpost"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivlikepost"
+            app:layout_constraintEnd_toStartOf="@+id/ivlikepost"
+            app:layout_constraintTop_toTopOf="@+id/ivlikepost"
+            app:srcCompat="@drawable/commicon" />
+
+        <TextView
+            android:id="@+id/tvcommcountpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="1"
+            android:textColor="@color/grey"
+            app:layout_constraintBottom_toBottomOf="@+id/ivcommpost"
+            app:layout_constraintEnd_toStartOf="@+id/ivcommpost"
+            app:layout_constraintTop_toTopOf="@+id/ivcommpost" />
+
+        <TextView
+            android:id="@+id/tvtswpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textColor="#e5e5e5"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvusernamewpost"
+            app:layout_constraintStart_toEndOf="@+id/tvusernamewpost"
+            app:layout_constraintTop_toTopOf="@+id/tvusernamewpost" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

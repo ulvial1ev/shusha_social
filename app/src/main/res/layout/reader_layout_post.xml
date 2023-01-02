@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/listadapter"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="26dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:onClick="onclickdeletewimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.939"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/tvusernamewpostreader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="onclickopen3"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#90e0ef"
+            app:layout_constraintBottom_toBottomOf="@+id/ivppreaderwpost"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivppreaderwpost"
+            app:layout_constraintTop_toTopOf="@+id/ivppreaderwpost" />
+
+        <ImageView
+            android:id="@+id/displayinpostimagereader"
+            android:layout_width="0dp"
+            android:layout_height="262dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:src="#2f3e46"
+            app:layout_constraintBottom_toTopOf="@+id/tvtitlewithpostreader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvusernamewpostreader" />
+
+        <TextView
+            android:id="@+id/tvtitlewithpostreader"
+            android:layout_width="328dp"
+            android:layout_height="22dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tvtextforpostwimage"
+            app:layout_constraintEnd_toEndOf="@+id/displayinpostimagereader"
+            app:layout_constraintHorizontal_bias="0.283"
+            app:layout_constraintStart_toStartOf="@+id/displayinpostimagereader"
+            app:layout_constraintTop_toBottomOf="@+id/displayinpostimagereader" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivppreaderwpost"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:onClick="onclickopen2"
+            android:src="#2f3e46"
+            app:civ_border_color="@color/grey"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/onlinewpost"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/online"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivppreaderwpost"
+            app:layout_constraintEnd_toEndOf="@+id/ivppreaderwpost"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivppreaderwpost"
+            app:layout_constraintTop_toTopOf="@+id/ivppreaderwpost"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tvtextforpostwimage"
+            android:layout_width="371dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="12dp"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeTextType="uniform"
+            android:text="TextView"
+            android:textColor="#8d99ae"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvtitlewithpostreader"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvtitlewithpostreader"
+            app:layout_constraintTop_toBottomOf="@+id/tvtitlewithpostreader" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="387dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="5dp"
+        android:autoSizeMaxTextSize="15sp"
+        android:autoSizeMinTextSize="8sp"
+        android:autoSizeTextType="uniform"
+        android:paddingStart="20dp"
+        android:text="Şərhlər :"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/listviewcommwpost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+    <ListView
+        android:id="@+id/listviewcommwpost"
+        android:layout_width="396dp"
+        android:layout_height="233dp"
+        android:transcriptMode="alwaysScroll"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listviewcommwpost">
+
+        <EditText
+            android:id="@+id/edcommwpost"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edittextstyle"
+            android:ems="10"
+            android:hint="Şərh"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button7"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529"
+            app:layout_constraintWidth_percent="0.8" />
+
+        <ImageView
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edittextstyle"
+            android:onClick="Onclicksendcommwpost"
+            android:padding="5dp"
+            android:src="@drawable/ic_send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edcommwpost"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
