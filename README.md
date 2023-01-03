@@ -35,3 +35,7 @@ Despite the ban, the app had a dedicated user base with over 200 authenticated u
 
 ![App Screenshot](https://raw.githubusercontent.com/ulvial1ev/shusha_social/master/app/src/main/res/ss2.PNG)
 
+![App Screenshot](https://raw.githubusercontent.com/ulvial1ev/shusha_social/master/app/src/main/res/GP1.jpg)
+
+
+
